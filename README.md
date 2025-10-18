@@ -1,9 +1,3 @@
-Great idea! Including a **Screenshots** section is a helpful way to visually showcase your application to users and contributors.
-
-Here’s the updated README with a **📸 Screenshots** section included. You can add as many images as you'd like by uploading them to your GitHub repository (e.g., in a `/screenshots` or `/assets/screenshots` folder) and referencing them with markdown image links.
-
----
-
 # 🌍 Noema
 
 **Noema** is a modern, interactive tourism platform designed to showcase travel destinations, provide up-to-date travel news, and offer booking and e-commerce functionalities. Built for both desktop and mobile users, Noema combines elegant design with an intuitive user experience—making it easy for travelers to explore destinations, stay informed, and plan their trips effortlessly.
@@ -65,19 +59,34 @@ Here’s the updated README with a **📸 Screenshots** section included. You ca
 
 ### 🏠 Home Page
 
-![Home Page](./assets/screenshots/homepage.png)
+<img width="1803" height="904" alt="image" src="https://github.com/user-attachments/assets/679919c9-f42a-4307-9b95-86415873dc8b" />
+
 
 ### 🛒 Marketplace
 
-![Marketplace](./assets/screenshots/marketplace.png)
+<img width="1797" height="908" alt="image" src="https://github.com/user-attachments/assets/a621b494-977d-4968-9b1b-8906ffb328a1" />
+
 
 ### 🎫 Booking Page
 
-![Booking Page](./assets/screenshots/booking.png)
+<img width="1803" height="912" alt="image" src="https://github.com/user-attachments/assets/08662e41-bd2f-47b8-8db0-4c51c509fc85" />
+
+
+<img width="1816" height="911" alt="image" src="https://github.com/user-attachments/assets/43741201-b0b1-44fb-a949-b0f73645b13c" />
+
+
+
+
 
 ### 🔑 Login/Register
 
-![Login Page](./assets/screenshots/login.png)
+<img width="1809" height="905" alt="image" src="https://github.com/user-attachments/assets/1a4f8f89-3cd9-4ad0-baab-06b096b3aec5" />
+
+<img width="1800" height="917" alt="image" src="https://github.com/user-attachments/assets/ac2e583f-eb9d-4995-a15e-537949c80c01" />
+
+
+<img width="1791" height="909" alt="image" src="https://github.com/user-attachments/assets/f08647ac-31e8-40a6-a2e4-7c1f36e682d0" />
+
 
 ---
 
