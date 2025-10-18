@@ -94,31 +94,19 @@
 
 To run this project locally:
 
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/zingerw1/Tourism-Project.git
-   ```
-
-2. **Navigate to the project directory:**
-
-   ```bash
-   cd Tourism-Project/Tourism\ Website
-   ```
-
-3. **Install dependencies:**
+1. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-4. **Start the server:**
+2. **Start the server:**
 
    ```bash
    npm start
    ```
 
-5. **Open your browser and go to:**
+3. **Open your browser and go to:**
 
    ```
    http://localhost:3000
