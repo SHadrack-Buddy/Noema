@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white flex flex-col min-h-screen">
+    <header class="bg-black text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="../Logo1.png" alt="Tourism Logo" class="h-10 w-auto">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../Home-Page/index.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</a>
+                <a href="../Book/Book.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Book</a>
+                <a href="../Events/Events.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Events</a>
+                <a href="../Current-Affairs/news.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">News</a>
+                <a href="../About-Us/About.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</a>
+                <a href="../Resources/Resources.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Resources</a>
+                <a href="../Marketplace/Marketplace.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Marketplace</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- Search -->
+              <div class="relative">
+                <input 
+                  type="text" 
+                  placeholder="Search news..." 
+                  class="bg-white text-gray-900 px-4 py-2 rounded-full w-64 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                <button class="absolute right-3 top-2.5 text-gray-500 hover:text-black transition-transform duration-300 hover:translate-x-1 hover:scale-110">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            
+              <!-- Account Dropdown -->
+              <div class="relative group">
+                <button class="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-100 transition flex items-center space-x-2">
+                  <i class="fas fa-user"></i>
+                  <span>Account</span>
+                  <i class="fas fa-chevron-down text-sm transition-transform duration-300 group-hover:rotate-180"></i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white/90 backdrop-blur-xl shadow-lg rounded-lg border border-gray-300 opacity-0 invisible transform scale-95 -translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:visible group-hover:scale-100 group-hover:translate-y-0">
+                  <a href="../Login&Register/Login.html" class="block px-5 py-3 text-gray-700 font-medium transition-all duration-300 rounded-t-lg hover:bg-black hover:text-white hover:shadow-md hover:scale-105">Login</a>
+                  <a href="../Login&Register/Register.html" class="block px-5 py-3 text-gray-700 font-medium transition-all duration-300 rounded-b-lg hover:bg-black hover:text-white hover:shadow-md hover:scale-105">Register</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+
+    
+    
+   <main class="flex-grow ">
+        <!-- Hero Section with Background Video and Welcome Text -->
+<section class="relative h-screen overflow-hidden">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-5] pointer-events-none">
+    <source src="https://videos.pexels.com/video-files/6168935/6168935-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-20 z-0"></div>
+
+  <!-- Welcome Text and CTA -->
+  <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start px-12 z-10">
+    <h1 class="text-white text-5xl md:text-6xl font-bold mb-6 blend-text">
+      Welcome to <span class="logo">Noema</span>
+    </h1>
+    <p class="text-white text-xl md:text-2xl font-light mb-8 max-w-xl blend-text">
+      Discover your next unforgettable journey with Noema.
+    </p>
+    <a href="../Book/BookRegistered.html" class="bg-white text-black px-6 py-3 rounded-full font-semibold text-lg hover:bg-black hover:text-white transition">
+      Explore Bookings
+    </a>
+  </div>
+</section>
+
+
+
+<section class="py-16 bg-gray-200">
+  <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Explore Botswana</h2>
+      <p class="text-lg font-light mb-8">
+          From the Okavango to the Kgalagadi Desert to the salt pans, explore never before seen beauty and wonder.
+      </p>
+     
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+         
+
+          <!-- Image 1 -->
+          <div class="relative group col-span-2 row-span-1">
+              <img src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Okavango Delta" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-102">
+          </div>
+          <!-- Image 2 -->
+          <div class="relative group col-span-1 row-span-2">
+              <img src="https://images.unsplash.com/photo-1507461476191-0ed4f9f18533?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chobe National Park" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-102">
+          </div>
+          <!-- Image 3 -->
+          <div class="relative group col-span-1 row-span-1">
+              <img src="https://images.unsplash.com/photo-1570463863076-2651f8aa55e9?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Makgadikgadi Pans" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-102">
+          </div>
+          <!-- Image 4 -->
+          <div class="relative group col-span-1 row-span-1">
+              <img src="https://images.unsplash.com/photo-1550547050-744447052329?q=80&w=1852&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tsodilo Hills" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-102">
+          </div>
+      </div>
+
+      <!-- Button to Booking Page -->
+      <div class="mt-8">
+          <a href="../Book/BookRegistered.html" class="bg-black text-white px-6 py-3 rounded-full font-semibold text-lg hover:bg-white hover:text-black border-2 border-black transition">
+              Book Your Adventure
+          </a>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="py-16 bg-gray-0">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-8">Botswana's Hidden Heritage Site</h2>
+    <p class="text-lg mb-8">Discover the rich history and culture of the Tsodilo Hills located within Ngamiland District</p>
+  </div>
+</section>
+
+<section class="py-16 bg-gray-100 relative">
+  <!-- Image Background -->
+<div class="absolute inset-0 z-0">
+  <img 
+    src="https://www.xflow.eu/wp-content/uploads/2015/03/150111_XFLO7894_Namibia-Twyfelfontain_1200.jpg" 
+    alt="Supa Ngwao Museum" 
+    class="w-full h-full object-cover"
+  />
+</div>
+
+  <!-- Content -->
+  <div class="container mx-auto text-center relative z-10">
+      <h2 class="text-3xl font-semibold mb-8 text-white">Tsodilo Hills</h2>
+      <p class="text-lg font-light mb-4 text-white">
+          Botswana's history dates back thousands of years, with evidence of early human habitation in the form of rock paintings and artifacts, especially in regions like Tsodilo Hills, often referred to as the "Louvre of the Desert." 
+      </p>
+      <p class="text-lg font-light mb-4 text-white">
+          In the late 19th century, the region was colonized by the British and was known as the British Protectorate of Bechuanaland. The British government took control to prevent the expansion of German and Boer territories. 
+      </p>
+      <p class="text-lg font-light mb-4 text-white">
+          Known for its large elephant population, Chobe National Park is a popular destination for wildlife enthusiasts. 
+      </p>
+      <p class="text-lg font-light mb-4 text-white">
+          The Makgadikgadi Pans, remnants of a once vast lake, are another fascinating part of Botswanaâ€™s landscape. 
+      </p>
+      <p class="text-lg font-light mb-4 text-white">
+          Tsodilo Hills is a UNESCO World Heritage site known for its ancient rock art, believed to be over 20,000 years old. 
+      </p>
+     
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-8">Botswana Map</h2>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Botswana_NSC_extension_map.svg" 
+      alt="Map of Botswana" 
+      class="mx-auto rounded-lg shadow-md max-w-md w-full h-auto"
+    >
+    <p class="mt-4 text-gray-600">A static map showing major regions of Botswana.</p>
+  </div>
+</section>
+
+
+<!-- Travel Quote Section -->
+<section class="bg-black text-white py-16 text-center mt-3 mb-3" style="background-image: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+  <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-semibold italic">â€œA journey of a thousand miles begins with a single stepâ€</h2>
+      <p class="mt-4 text-xl font-light">â€“ Lao Tzu</p>
+  </div>
+</section>
+
+<!-- Register for Our Services Banner -->
+<section class="bg-white text-black py-12 text-center mt-3 mb-3">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4">Register for Our Services</h2>
+    <p class="text-lg mb-6">Join Noema and unlock access to exclusive travel experiences and personalized adventures.</p>
+    <a href="../Login&Register/Register.html" class="bg-black text-white px-6 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-black border-2 border-black transition duration-300">
+      Register Now
+    </a>
+  </div>
+</section>       
+    </main>
+
+
+  
+    <!-- FOOTER LOGO -->
+    </div>
+
+    <!-- FOOTER -->
+        <!-- FOOTER LOGO -->
+    </div>
+
+    <!-- FOOTER -->
+        <!-- FOOTER LOGO -->
+    </div>
+
+    <!-- FOOTER -->
+        <!-- FOOTER LOGO -->
+    </div>
+
+    <!-- FOOTER -->
+        <div class="footer-logo">
+        <div class="container">
+            <img src="'@ + $imgSrc + '" alt="Company Logo">
+        </div>
+    </div><footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="../About-Us/About.html">about us</a></li>
+                        <li><a href="../Resources/Resources.html">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="../Login&Register/Login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="../Marketplace/Marketplace.html">Marketplace</a></li>
+                        <li><a href="../Current-Affairs/news.html">News</a></li>
+                        <li><a href="../Book/Book.html">Booking</a></li>
+                        <li><a href="../Events/Events.html">Events</a></li>
+                        <li><a href="../Cart/cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Location</h4>
+                    <address class="location">
+                        <p><strong>Noema Tourism Services</strong></p>
+                        <p>EastLondon Block 9, Plot 20994</p>
+                        <p><a href="mailto:marketing@noemaservices.co.bw">marketing@noemaservices.co.bw</a></p>
+                        <p><a href="tel:+2739133922">Tel: +27 391 33922</a> | <a href="tel:+273947978">Fax: +27 394 7978</a></p>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2025 Noema Tourism Services Inc. All rights reserved.</p>
+    </div>
+</body>
+</html>
+</html>
+</html>
+</html>
+
+
+
+

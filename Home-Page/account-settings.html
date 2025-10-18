@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/jpeg" href="../Photos/NoemaLogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/jpeg" href="../Photos/NoemaLogo.jpg">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white flex flex-col min-h-screen">
+    <header class="bg-black text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="../Logo1.png" alt="Tourism Logo" class="h-10 w-auto">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../Home-Page/index.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</a>
+                <a href="../Book/Book.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Book</a>
+                <a href="../Events/Events.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Events</a>
+                <a href="../Current-Affairs/news.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">News</a>
+                <a href="../About-Us/About.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</a>
+                <a href="../Resources/Resources.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Resources</a>
+                <a href="../Marketplace/Marketplace.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Marketplace</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- Search -->
+              <div class="relative">
+                <input 
+                  type="text" 
+                  placeholder="Search news..." 
+                  class="bg-white text-gray-900 px-4 py-2 rounded-full w-64 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                <button class="absolute right-3 top-2.5 text-gray-500 hover:text-black transition-transform duration-300 hover:translate-x-1 hover:scale-110">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            
+              <!-- Account Dropdown -->
+                <div class="relative group">
+                  <button class="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition flex items-center space-x-2 hover:shadow-black">
+                    <i class="fas fa-user"></i>
+                    <span>Account</span>
+                    <i class="fas fa-chevron-down text-sm transition-transform duration-300 group-hover:rotate-180"></i>
+                  </button>
+                  <!-- Dropdown Menu -->
+                  <div class="absolute right-0 mt-2 w-48 bg-white/90 backdrop-blur-xl shadow-lg rounded-lg border border-gray-700 opacity-0 invisible transform scale-95 -translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:visible group-hover:scale-100 group-hover:translate-y-0 z-50">
+                    <a href="../Login&Register/Login.html" class="block px-5 py-3 text-black font-medium transition-all duration-300 rounded-t-lg hover:bg-black hover:text-white hover:shadow-white hover:scale-100">Login</a>
+                    <a href="../Login&Register/Register.html" class="block px-5 py-3 text-black font-medium transition-all duration-300 rounded-b-lg hover:bg-black hover:text-white hover:shadow-white hover:scale-100">Register</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+
+  
+  <main class="flex-grow container mx-auto p-6">
+    <form id="accountSettingsForm" class="bg-white p-6 rounded shadow-md max-w-lg mx-auto space-y-4">
+      <div>
+        <label for="name" class="block font-medium mb-1">Name</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label for="surname" class="block font-medium mb-1">Surname</label>
+        <input type="text" id="surname" name="surname" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label for="age" class="block font-medium mb-1">Age</label>
+        <input type="number" id="age" name="age" min="1" max="120" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label for="gender" class="block font-medium mb-1">Gender</label>
+        <select id="gender" name="gender" class="w-full border border-gray-300 rounded px-3 py-2">
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="nonbinary">Nonbinary</option>
+          <option value="other">Other</option>
+          <option value="prefer_not_to_say">Prefer not to say</option>
+        </select>
+      </div>
+      <div>
+        <label for="phone" class="block font-medium mb-1">Phone</label>
+        <input type="text" id="phone" name="phone" pattern="\\d{8}" title="8 digit phone number" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label for="email" class="block font-medium mb-1">Email</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label for="country" class="block font-medium mb-1">Country</label>
+        <input type="text" id="country" name="country" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label for="marital_status" class="block font-medium mb-1">Marital Status</label>
+        <select id="marital_status" name="marital_status" class="w-full border border-gray-300 rounded px-3 py-2">
+          <option value="">Select Marital Status</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option>
+          <option value="widowed">Widowed</option>
+        </select>
+      </div>
+      <div>
+        <label for="next_of_kin" class="block font-medium mb-1">Next of Kin</label>
+        <input type="text" id="next_of_kin" name="next_of_kin" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <label for="password" class="block font-medium mb-1">New Password (leave blank to keep current)</label>
+        <input type="password" id="password" name="password" class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+      <div>
+        <button type="submit" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">Update Profile</button>
+      </div>
+      <div id="message" class="text-center mt-2"></div>
+    </form>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('accountSettingsForm');
+      const messageDiv = document.getElementById('message');
+
+      // Fetch current user profile data
+      fetch('/user/profile', { credentials: 'include' })
+        .then(res => {
+          if (!res.ok) throw new Error('Failed to fetch profile');
+          return res.json();
+        })
+        .then(data => {
+          form.name.value = data.name || '';
+          form.surname.value = data.surname || '';
+          form.age.value = data.age || '';
+          form.gender.value = data.gender || '';
+          form.phone.value = data.phone || '';
+          form.email.value = data.email || '';
+          form.country.value = data.country || '';
+          form.marital_status.value = data.marital_status || '';
+          form.next_of_kin.value = data.next_of_kin || '';
+        })
+        .catch(err => {
+          messageDiv.textContent = 'Error loading profile data.';
+          messageDiv.className = 'text-red-600';
+        });
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        messageDiv.textContent = '';
+        messageDiv.className = '';
+
+        const formData = {
+          name: form.name.value.trim(),
+          surname: form.surname.value.trim(),
+          age: form.age.value ? Number(form.age.value) : null,
+          gender: form.gender.value,
+          phone: form.phone.value.trim(),
+          email: form.email.value.trim(),
+          country: form.country.value.trim(),
+          marital_status: form.marital_status.value,
+          next_of_kin: form.next_of_kin.value.trim(),
+          password: form.password.value
+        };
+
+        try {
+          const response = await fetch('/user/profile/update', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+            body: JSON.stringify(formData)
+          });
+
+          const result = await response.json();
+          if (response.ok) {
+            messageDiv.textContent = result.message || 'Profile updated successfully.';
+            messageDiv.className = 'text-green-600';
+            form.password.value = '';
+          } else {
+            messageDiv.textContent = result.message || 'Update failed.';
+            messageDiv.className = 'text-red-600';
+          }
+        } catch (error) {
+          messageDiv.textContent = 'Server error. Please try again later.';
+          messageDiv.className = 'text-red-600';
+        }
+      });
+    });
+  </script>
+        <!-- FOOTER LOGO -->
+    <div class="footer-logo">
+        <div class="container">
+            <img src="../../../../Photos/NoemaLogo.jpg" alt="Company Logo">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="../../../../About-Us/About.html">about us</a></li>
+                        <li><a href="../../../../Resources/Resources.html">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="../../../../Login&Register/Login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="../../../../Marketplace/Marketplace.html">Marketplace</a></li>
+                        <li><a href="../../../../Current-Affairs/news.html">News</a></li>
+                        <li><a href="../../../../Book/Book.html">Booking</a></li>
+                        <li><a href="../../../../Events/Events.html">Events</a></li>
+                        <li><a href="../../../../Cart/cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Location</h4>
+                    <address class="location">
+                        <p><strong>Noema Tourism Services</strong></p>
+                        <p>EastLondon Block 9, Plot 20994</p>
+                        <p><a href="mailto:marketing@noemaservices.co.bw">marketing@noemaservices.co.bw</a></p>
+                        <p><a href="tel:+2739133922">Tel: +27 391 33922</a> | <a href="tel:+273947978">Fax: +27 394 7978</a></p>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2025 Noema Tourism Services Inc. All rights reserved.</p>
+    </div>
+</body>
+</html>

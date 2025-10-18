@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white flex flex-col min-h-screen">
+    <header class="bg-black text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="../Logo1.png" alt="Tourism Logo" class="h-10 w-auto">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../Home-Page/index.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</a>
+                <a href="../Book/Book.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Book</a>
+                <a href="../Events/Events.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Events</a>
+                <a href="../Current-Affairs/news.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">News</a>
+                <a href="../About-Us/About.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</a>
+                <a href="../Resources/Resources.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Resources</a>
+                <a href="../Marketplace/Marketplace.html" class="relative hover:text-gray-300 transition duration-300 transform hover:scale-105 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Marketplace</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- Search -->
+              <div class="relative">
+                <input 
+                  type="text" 
+                  placeholder="Search news..." 
+                  class="bg-white text-gray-900 px-4 py-2 rounded-full w-64 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                <button class="absolute right-3 top-2.5 text-gray-500 hover:text-black transition-transform duration-300 hover:translate-x-1 hover:scale-110">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            
+              <!-- Account Dropdown -->
+              <div class="relative group">
+                <button class="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-100 transition flex items-center space-x-2">
+                  <i class="fas fa-user"></i>
+                  <span>Account</span>
+                  <i class="fas fa-chevron-down text-sm transition-transform duration-300 group-hover:rotate-180"></i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white/90 backdrop-blur-xl shadow-lg rounded-lg border border-gray-300 opacity-0 invisible transform scale-95 -translate-y-4 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:visible group-hover:scale-100 group-hover:translate-y-0">
+                  <a href="../Login&Register/Login.html" class="block px-5 py-3 text-gray-700 font-medium transition-all duration-300 rounded-t-lg hover:bg-black hover:text-white hover:shadow-md hover:scale-105">Login</a>
+                  <a href="../Login&Register/Register.html" class="block px-5 py-3 text-gray-700 font-medium transition-all duration-300 rounded-b-lg hover:bg-black hover:text-white hover:shadow-md hover:scale-105">Register</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+
+<!-- Navigation header remains the same -->
+
+    
+    <main class="flex-grow container mx-auto px-4 py-10">
+        <div class="w-full mx-auto">
+            <!-- Hero Section -->
+            <section class="mb-16">
+                <div class="relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2560&q=80" 
+                         alt="Featured travel destination" 
+                         class="w-full h-96 object-cover brightness-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-8">
+                        <div class="max-w-2xl">
+                            <span class="text-blue-400 font-medium text-sm uppercase tracking-wider">Featured Story</span>
+                            <h1 class="text-4xl font-bold text-white mt-2 mb-4">Chobe National Park Introduces Night Safari Experience</h1>
+                            <p class="text-gray-200 mb-4">New nocturnal wildlife viewing program offers visitors unique opportunities to observe Botswana's nocturnal species.</p>
+                            <div class="flex items-center text-sm text-gray-300">
+                                <span>By Michael Roberts</span>
+                                <span class="mx-2">•</span>
+                                <span>June 20, 2025</span>
+                                <span class="mx-2">•</span>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News Grid -->
+            <section>
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold">Latest News</h2>
+                    <div class="flex space-x-2">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- News Card 1 -->
+                    <article class="news-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Luxury glamping" 
+                                 class="news-image w-full h-48 object-cover transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2 text-sm text-gray-500">
+                                <span>Accommodation</span>
+                                <span>June 18, 2025</span>
+                            </div>
+                            <h3 class="news-title text-xl font-semibold mb-3 transition-colors duration-300">Luxury Glamping Resort Opens in Makgadikgadi Pans</h3>
+                            <p class="text-gray-600 mb-4">New eco-friendly luxury camp offers unique salt pan experiences with modern comforts.</p>
+                            <button onclick="openModal('article1Modal')" class="text-blue-500 font-medium hover:text-blue-700 transition flex items-center">
+                                Read more
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Article 1 Modal -->
+                    <div id="article1Modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+                        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+                            <!-- Close button -->
+                            <button onclick="closeModal('article1Modal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                            
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <div class="mb-6">
+                                    <span class="text-blue-500 font-medium text-sm uppercase tracking-wider">Accommodation</span>
+                                    <h2 class="text-3xl font-bold mt-2 mb-4">Luxury Glamping Resort Opens in Makgadikgadi Pans</h2>
+                                    <div class="flex items-center text-sm text-gray-500 mb-6">
+                                        <span>By Rachel Thompson</span>
+                                        <span class="mx-2">•</span>
+                                        <span>June 18, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>5 min read</span>
+                                    </div>
+                                </div>
+                                
+                                <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                     alt="Luxury glamping" 
+                                     class="w-full h-96 object-cover rounded-lg mb-8">
+                                
+                                <div class="prose max-w-none">
+                                    <p class="mb-4">A new luxury glamping resort has opened its doors in the stunning Makgadikgadi Pans, offering visitors a unique blend of comfort and wilderness experience. The eco-friendly resort features state-of-the-art sustainable technology while providing guests with an immersive salt pan experience.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Accommodation Features</h3>
+                                    <p class="mb-4">The resort consists of ten luxury tented suites, each equipped with private viewing decks, outdoor showers, and climate control systems powered by solar energy. The tents are strategically positioned to offer panoramic views of the salt pans while ensuring privacy and comfort.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Sustainable Design</h3>
+                                    <p class="mb-4">The resort operates entirely on renewable energy and employs a sophisticated water recycling system. Building materials were carefully selected to minimize environmental impact while maintaining the highest standards of luxury accommodation.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Guest Experience</h3>
+                                    <p class="mb-4">Visitors can enjoy guided walks with San bushmen, quad biking adventures across the pans, and stargazing sessions with expert astronomers. The resort's restaurant serves farm-to-table cuisine featuring local ingredients and traditional recipes.</p>
+                                    
+                                    <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                                        <h4 class="text-lg font-semibold mb-3">Resort Highlights:</h4>
+                                        <ul class="list-disc pl-6 space-y-2">
+                                            <li>10 luxury tented suites</li>
+                                            <li>100% solar-powered facility</li>
+                                            <li>Private viewing decks</li>
+                                            <li>Cultural experiences with San guides</li>
+                                            <li>Farm-to-table dining</li>
+                                            <li>Adventure activities available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 Modal -->
+                    <div id="article2Modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+                        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+                            <!-- Close button -->
+                            <button onclick="closeModal('article2Modal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                            
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <div class="mb-6">
+                                    <span class="text-blue-500 font-medium text-sm uppercase tracking-wider">Events</span>
+                                    <h2 class="text-3xl font-bold mt-2 mb-4">Gaborone Food Festival Celebrates Local Cuisine</h2>
+                                    <div class="flex items-center text-sm text-gray-500 mb-6">
+                                        <span>By Sarah Mokgadi</span>
+                                        <span class="mx-2">•</span>
+                                        <span>June 16, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>4 min read</span>
+                                    </div>
+                                </div>
+                                
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                     alt="Food festival" 
+                                     class="w-full h-96 object-cover rounded-lg mb-8">
+                                
+                                <div class="prose max-w-none">
+                                    <p class="mb-4">The annual Gaborone Food Festival returns this year with an expanded program celebrating the rich culinary heritage of Botswana. The week-long event will feature cooking demonstrations, tastings, and cultural performances that showcase the diversity of local cuisine.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Festival Highlights</h3>
+                                    <p class="mb-4">This year's festival will feature over 50 local food vendors, traditional cooking demonstrations, and interactive workshops. Visitors can experience everything from traditional Setswana dishes to modern interpretations of classic recipes.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Cultural Program</h3>
+                                    <p class="mb-4">The festival will include traditional music and dance performances, storytelling sessions, and demonstrations of traditional cooking methods. Special emphasis will be placed on the cultural significance of various dishes and ingredients.</p>
+                                    
+                                    <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                                        <h4 class="text-lg font-semibold mb-3">Event Details:</h4>
+                                        <ul class="list-disc pl-6 space-y-2">
+                                            <li>Dates: July 15-21, 2025</li>
+                                            <li>Location: Maun Sports Complex</li>
+                                            <li>Daily performances and workshops</li>
+                                            <li>Evening storytelling sessions</li>
+                                            <li>Traditional food market</li>
+                                            <li>Craft demonstrations and sales</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <article class="news-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Food festival" 
+                                 class="news-image w-full h-48 object-cover transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2 text-sm text-gray-500">
+                                <span>Events</span>
+                                <span>June 16, 2025</span>
+                            </div>
+                            <h3 class="news-title text-xl font-semibold mb-3 transition-colors duration-300">Gaborone Food Festival Celebrates Local Cuisine</h3>
+                            <p class="text-gray-600 mb-4">Annual culinary event showcases traditional Botswana dishes and modern fusion cuisine.</p>
+                            <button onclick="openModal('article2Modal')" class="text-blue-500 font-medium hover:text-blue-700 transition flex items-center">
+                                Read more
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 Modal -->
+                    <div id="article3Modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+                        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+                            <!-- Close button -->
+                            <button onclick="closeModal('article3Modal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                            
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <div class="mb-6">
+                                    <span class="text-blue-500 font-medium text-sm uppercase tracking-wider">Education</span>
+                                    <h2 class="text-3xl font-bold mt-2 mb-4">New Safari Guide Training Program Launches</h2>
+                                    <div class="flex items-center text-sm text-gray-500 mb-6">
+                                        <span>By David Moyo</span>
+                                        <span class="mx-2">•</span>
+                                        <span>June 14, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>5 min read</span>
+                                    </div>
+                                </div>
+                                
+                                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                     alt="Safari guide" 
+                                     class="w-full h-96 object-cover rounded-lg mb-8">
+                                
+                                <div class="prose max-w-none">
+                                    <p class="mb-4">A groundbreaking safari guide training program has been launched in Botswana, aimed at developing local talent and enhancing the quality of wildlife tourism experiences. The comprehensive program combines traditional knowledge with modern conservation practices.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Program Overview</h3>
+                                    <p class="mb-4">The 12-month intensive training program covers wildlife biology, tracking skills, guest relations, and sustainable tourism practices. Participants will receive hands-on experience working alongside experienced guides in various national parks and private reserves.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Industry Partnership</h3>
+                                    <p class="mb-4">The program is a collaboration between the Department of Wildlife and National Parks, leading safari operators, and international conservation organizations. This partnership ensures that graduates are well-prepared for employment in the tourism sector.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Career Opportunities</h3>
+                                    <p class="mb-4">Graduates of the program will be certified as professional safari guides and will have access to employment opportunities with leading tourism operators. The program also includes business management training for those interested in starting their own tourism enterprises.</p>
+                                    
+                                    <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                                        <h4 class="text-lg font-semibold mb-3">Program Details:</h4>
+                                        <ul class="list-disc pl-6 space-y-2">
+                                            <li>12-month intensive training</li>
+                                            <li>Professional certification</li>
+                                            <li>Hands-on field experience</li>
+                                            <li>Business management skills</li>
+                                            <li>Conservation education</li>
+                                            <li>Industry placement support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <article class="news-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Safari guide" 
+                                 class="news-image w-full h-48 object-cover transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2 text-sm text-gray-500">
+                                <span>Education</span>
+                                <span>June 14, 2025</span>
+                            </div>
+                            <h3 class="news-title text-xl font-semibold mb-3 transition-colors duration-300">New Safari Guide Training Program Launches</h3>
+                            <p class="text-gray-600 mb-4">Initiative aims to develop local talent and enhance wildlife tourism experiences.</p>
+                            <button onclick="openModal('article3Modal')" class="text-blue-500 font-medium hover:text-blue-700 transition flex items-center">
+                                Read more
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- News Card 4 -->
+                    <article class="news-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Adventure tourism" 
+                                 class="news-image w-full h-48 object-cover transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2 text-sm text-gray-500">
+                                <span>Adventure</span>
+                                <span>May 15, 2025</span>
+                            </div>
+                            <h3 class="news-title text-xl font-semibold mb-3 transition-colors duration-300">New Adventure Tourism Routes Launched in Northern Botswana</h3>
+                            <p class="text-gray-600 mb-4">A series of guided hiking and mountain biking trails opens up unexplored regions to adventure seekers.</p>
+                            <button onclick="openModal('article4Modal')" class="text-blue-500 font-medium hover:text-blue-700 transition flex items-center">
+                                Read more
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- Article 4 Modal -->
+                    <div id="article4Modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+                        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+                            <!-- Close button -->
+                            <button onclick="closeModal('article4Modal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                            
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <div class="mb-6">
+                                    <span class="text-blue-500 font-medium text-sm uppercase tracking-wider">Adventure</span>
+                                    <h2 class="text-3xl font-bold mt-2 mb-4">New Adventure Tourism Routes Launched in Northern Botswana</h2>
+                                    <div class="flex items-center text-sm text-gray-500 mb-6">
+                                        <span>By Alex Thompson</span>
+                                        <span class="mx-2">•</span>
+                                        <span>May 15, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>5 min read</span>
+                                    </div>
+                                </div>
+                                
+                                <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                     alt="Adventure tourism" 
+                                     class="w-full h-96 object-cover rounded-lg mb-8">
+                                
+                                <div class="prose max-w-none">
+                                    <p class="mb-4">The Botswana Tourism Board has unveiled a network of new adventure tourism routes in the northern region, opening up previously unexplored areas to outdoor enthusiasts. The initiative includes guided hiking trails, mountain biking routes, and rock climbing locations, all designed to showcase the region's dramatic landscapes and diverse ecosystems.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Trail Network</h3>
+                                    <p class="mb-4">The new network includes over 200 kilometers of marked trails varying in difficulty from beginner to expert level. Each route has been carefully mapped and includes rest points, viewing areas, and emergency access points. The trails offer unique perspectives of the region's geological formations and wildlife habitats.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Safety Measures</h3>
+                                    <p class="mb-4">All routes are equipped with emergency communication points and are monitored by trained rangers. Visitors must register before starting any trail and are provided with detailed maps and safety briefings. Guide services are mandatory for certain high-difficulty routes.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Environmental Impact</h3>
+                                    <p class="mb-4">The routes have been developed with minimal environmental impact, using existing animal trails where possible and implementing strict waste management protocols. Regular environmental assessments will monitor the impact of increased visitor activity.</p>
+                                    
+                                    <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                                        <h4 class="text-lg font-semibold mb-3">Adventure Options:</h4>
+                                        <ul class="list-disc pl-6 space-y-2">
+                                            <li>Multi-day hiking expeditions</li>
+                                            <li>Technical mountain biking trails</li>
+                                            <li>Rock climbing routes</li>
+                                            <li>Guided nature walks</li>
+                                            <li>Photography tours</li>
+                                            <li>Camping facilities</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 5 -->
+                    <article class="news-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Digital nomad workspace" 
+                                 class="news-image w-full h-48 object-cover transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2 text-sm text-gray-500">
+                                <span>Innovation</span>
+                                <span>May 10, 2025</span>
+                            </div>
+                            <h3 class="news-title text-xl font-semibold mb-3 transition-colors duration-300">Botswana Launches Digital Nomad Visa Program</h3>
+                            <p class="text-gray-600 mb-4">New visa category aims to attract remote workers and boost local economy through long-term stays.</p>
+                            <button onclick="openModal('article5Modal')" class="text-blue-500 font-medium hover:text-blue-700 transition flex items-center">
+                                Read more
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 Modal -->
+                    <div id="article5Modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+                        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+                            <!-- Close button -->
+                            <button onclick="closeModal('article5Modal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                            
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <div class="mb-6">
+                                    <span class="text-blue-500 font-medium text-sm uppercase tracking-wider">Innovation</span>
+                                    <h2 class="text-3xl font-bold mt-2 mb-4">Botswana Launches Digital Nomad Visa Program</h2>
+                                    <div class="flex items-center text-sm text-gray-500 mb-6">
+                                        <span>By Maria Santos</span>
+                                        <span class="mx-2">•</span>
+                                        <span>May 10, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>4 min read</span>
+                                    </div>
+                                </div>
+                                
+                                <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                     alt="Digital nomad workspace" 
+                                     class="w-full h-96 object-cover rounded-lg mb-8">
+                                
+                                <div class="prose max-w-none">
+                                    <p class="mb-4">Botswana has announced a groundbreaking digital nomad visa program, allowing remote workers to live and work in the country for up to two years. This initiative aims to diversify the tourism sector and attract long-term international visitors who can contribute to the local economy.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Visa Features</h3>
+                                    <p class="mb-4">The new visa category offers multiple benefits, including simplified application processes, access to local banking services, and the ability to rent long-term accommodation. Digital nomads can also bring their immediate family members and are eligible for local healthcare coverage.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Infrastructure Development</h3>
+                                    <p class="mb-4">To support the program, the government is investing in digital infrastructure, including high-speed internet connectivity in major cities and the development of co-working spaces. Several hotels and lodges are also creating dedicated facilities for remote workers.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Economic Impact</h3>
+                                    <p class="mb-4">The program is expected to generate significant economic benefits through increased long-term stays, local spending, and knowledge transfer. Early projections suggest the initiative could attract up to 1,000 digital nomads in its first year.</p>
+                                    
+                                    <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                                        <h4 class="text-lg font-semibold mb-3">Program Highlights:</h4>
+                                        <ul class="list-disc pl-6 space-y-2">
+                                            <li>Two-year visa duration</li>
+                                            <li>Simplified application process</li>
+                                            <li>Access to local banking</li>
+                                            <li>Healthcare coverage options</li>
+                                            <li>Family inclusion permitted</li>
+                                            <li>Co-working space access</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 6 -->
+                    <article class="news-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Sustainable tourism" 
+                                 class="news-image w-full h-48 object-cover transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2 text-sm text-gray-500">
+                                <span>Sustainability</span>
+                                <span>May 5, 2025</span>
+                            </div>
+                            <h3 class="news-title text-xl font-semibold mb-3 transition-colors duration-300">Okavango Delta Lodges Pioneer Zero-Waste Tourism</h3>
+                            <p class="text-gray-600 mb-4">Leading eco-lodges implement comprehensive sustainability programs to eliminate waste and protect the environment.</p>
+                            <button onclick="openModal('article6Modal')" class="text-blue-500 font-medium hover:text-blue-700 transition flex items-center">
+                                Read more
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 Modal -->
+                    <div id="article6Modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+                        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+                            <!-- Close button -->
+                            <button onclick="closeModal('article6Modal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                            
+                            <!-- Modal content -->
+                            <div class="p-8">
+                                <div class="mb-6">
+                                    <span class="text-blue-500 font-medium text-sm uppercase tracking-wider">Sustainability</span>
+                                    <h2 class="text-3xl font-bold mt-2 mb-4">Okavango Delta Lodges Pioneer Zero-Waste Tourism</h2>
+                                    <div class="flex items-center text-sm text-gray-500 mb-6">
+                                        <span>By Thomas Green</span>
+                                        <span class="mx-2">•</span>
+                                        <span>May 5, 2025</span>
+                                        <span class="mx-2">•</span>
+                                        <span>5 min read</span>
+                                    </div>
+                                </div>
+                                
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                     alt="Sustainable tourism" 
+                                     class="w-full h-96 object-cover rounded-lg mb-8">
+                                
+                                <div class="prose max-w-none">
+                                    <p class="mb-4">A consortium of luxury lodges in Botswana's Okavango Delta has launched an ambitious zero-waste initiative, setting new standards for sustainable tourism in Africa. The program aims to eliminate all non-biodegradable waste while enhancing the guest experience through innovative eco-friendly practices.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Waste Reduction Strategies</h3>
+                                    <p class="mb-4">The lodges have implemented comprehensive waste management systems, including composting facilities, water recycling plants, and partnerships with local recycling initiatives. Single-use plastics have been completely eliminated, replaced with sustainable alternatives made from local materials.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Energy Innovation</h3>
+                                    <p class="mb-4">Solar power systems now provide 100% of the lodges' energy needs, while innovative building designs maximize natural cooling and ventilation. Electric safari vehicles and boats are being introduced to reduce carbon emissions during wildlife viewing activities.</p>
+                                    
+                                    <h3 class="text-xl font-semibold mt-6 mb-3">Community Integration</h3>
+                                    <p class="mb-4">Local communities are central to the initiative, with residents trained in sustainable practices and employed in various roles. The program also supports local artisans who create eco-friendly amenities and decorative items for the lodges.</p>
+                                    
+                                    <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                                        <h4 class="text-lg font-semibold mb-3">Initiative Highlights:</h4>
+                                        <ul class="list-disc pl-6 space-y-2">
+                                            <li>Zero single-use plastics</li>
+                                            <li>100% solar powered operations</li>
+                                            <li>Water recycling systems</li>
+                                            <li>Electric safari vehicles</li>
+                                            <li>Local community employment</li>
+                                            <li>Sustainable supply chain</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Pagination Section -->
+    <section class="mt-12 text-center">
+        <div class="inline-flex items-center space-x-2">
+            <!-- Previous Button -->
+            <button id="prev-btn" class="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition font-medium" onclick="changePage('prev')">
+                &lt; 
+            </button>
+            
+            <!-- Page 1 Button -->
+            <button id="page-1" class="px-4 py-2 bg-gray-200 text-black rounded-md hover:bg-gray-300 transition font-medium" onclick="goToPage(1)">
+                1
+            </button>
+            
+            <!-- Page 2 Button -->
+            <button id="page-2" class="px-4 py-2 bg-gray-200 text-black rounded-md hover:bg-gray-300 transition font-medium" onclick="goToPage(2)">
+                2
+            </button>
+
+            
+            <!-- Next Button -->
+            <button id="next-btn" class="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition font-medium" onclick="changePage('next')">
+                 &gt;
+            </button>
+        </div>
+    </section>
+
+          
+        </div>
+    </main>
+    
+   
+        <!-- FOOTER LOGO -->
+    <div class="footer-logo">
+        <div class="container">
+            <img src="../../../../Photos/NoemaLogo.jpg" alt="Company Logo">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="../../../../About-Us/About.html">about us</a></li>
+                        <li><a href="../../../../Resources/Resources.html">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="../../../../Login&Register/Login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="../../../../Marketplace/Marketplace.html">Marketplace</a></li>
+                        <li><a href="../../../../Current-Affairs/news.html">News</a></li>
+                        <li><a href="../../../../Book/Book.html">Booking</a></li>
+                        <li><a href="../../../../Events/Events.html">Events</a></li>
+                        <li><a href="../../../../Cart/cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Location</h4>
+                    <address class="location">
+                        <p><strong>Noema Tourism Services</strong></p>
+                        <p>EastLondon Block 9, Plot 20994</p>
+                        <p><a href="mailto:marketing@noemaservices.co.bw">marketing@noemaservices.co.bw</a></p>
+                        <p><a href="tel:+2739133922">Tel: +27 391 33922</a> | <a href="tel:+273947978">Fax: +27 394 7978</a></p>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2025 Noema Tourism Services Inc. All rights reserved.</p>
+    </div>
+</body>
+</html>
