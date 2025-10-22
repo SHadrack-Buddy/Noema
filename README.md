@@ -136,6 +136,3 @@ To run this project locally:
   └── /components
 ```
 
-
-
-Let me know if you want to include animated walkthroughs (GIFs or videos), badges, or CI/CD documentation.
